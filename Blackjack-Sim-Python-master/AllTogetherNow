@@ -1,6 +1,8 @@
 import random
+
+
 class Card:
-    """Makes a card with value and suit"""
+"""Makes a card with value and suit"""
     def __init__(self, cardvalue, cardsuit):
         self.value = cardvalue
         self.suit = cardsuit
@@ -68,8 +70,6 @@ class Hand:
 
 
 """Asks how many players, creates 1 hand for dealer and 1 hand for each player"""
-from Deck import Deck
-from Hand import Hand
 playernumber = input("How many Players?: ")
 handcount = int(playernumber) + 1
 print(handcount)
